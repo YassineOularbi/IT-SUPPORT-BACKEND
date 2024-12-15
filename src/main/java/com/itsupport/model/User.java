@@ -84,7 +84,7 @@ public class User implements UserDetails {
     @Column(name = "address", nullable = true)
     private String address;
 
-    @Column(name = "joined_date")
+    @Column(name = "joined_date", columnDefinition = "DATETIME")
     @CreationTimestamp
     private Date joinedDate;
 
